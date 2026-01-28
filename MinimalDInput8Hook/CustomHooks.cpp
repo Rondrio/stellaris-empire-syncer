@@ -79,7 +79,7 @@ std::string GetGithubCustomEmpires() {
         WINHTTP_NO_PROXY_NAME,
         WINHTTP_NO_PROXY_BYPASS, 0);
 
-    HINTERNET hConnect = WinHttpConnect(hSession, L"https://github.com/Rondrio/stellaris-empire-syncer/blob/main/custom-empires.txt",
+    HINTERNET hConnect = WinHttpConnect(hSession, L"https://raw.githubusercontent.com/Rondrio/stellaris-empire-syncer/refs/heads/main/custom-empires.txt",
         INTERNET_DEFAULT_HTTPS_PORT, 0);
     
     if (!hConnect)
